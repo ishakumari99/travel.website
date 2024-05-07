@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Destination Styles */
+    .destination-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .destination-item {
+      width: calc(33.33% - 20px); /* Adjust the width as needed */
+      margin: 10px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .destination-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .destination-item img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .destination-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .destination-item p {
+      font-size: 16px;
+    }
+
+#navbar {
+    height: 60px;
+    background-color: #0f1111;
+      margin: 0 auto;
+      padding: 20px;
+      color: white
+    }
+
+    #logo{
+      background-color: #f08804;
+      font-size: 20px;
+    }
+
+   a{
+    margin-right: 110px;;
+    font-size: 20px;
+   }
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0f1111;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      min-width: 160px;
+    }
+
+    .dropdown-content a {
+      color: #f9f1f1;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    button{
+  background-color:#f08804;}
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Destination Styles */
+    .destination-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .destination-item {
+      width: calc(33.33% - 20px); /* Adjust the width as needed */
+      margin: 10px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .destination-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .destination-item img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .destination-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .destination-item p {
+      font-size: 16px;
+    }
+  </style>
+</style>
+<body> 
+    <div id="navbar">
+    <a id="logo">Travel Agency</a>
+    <a  class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+        <a  class="nav-link active" aria-current="page" href="1.html" style="color: white;">Destinations</a>
+        <a  class="nav-link active" aria-current="page" href="time.html" style="color: white;">Time table</a>
+        <a  class="nav-link active" aria-current="page" href="prices.html" style="color: white;">prices</a>
+        <div class="dropdown">
+          <a  style="color: white;"> More</a>
+          <div class="dropdown-content">
+            <a >Booking</a>
+            <a >Review</a>
+            <a >Payment</a>
+          </div>
+        </div>
+          <input placeholder="search Travel">
+          <button> search</button>
+  </div>
+
+    <div class="destination-container">
+  <div class="destination-item">
+    <img src="6.jpeg" alt="Paris">
+    <h3>Amritsar</h3>
+    <p>Amritsar, panjab</p>
+    <p>Explore the city of river and gurudwara.</p>
+
+  </div>
+
+  <div class="destination-item">
+    <img src="2.jpeg" alt="New York">
+    <h3>New York</h3>
+    <p>New York, USA</p>
+    <p>Visit the city that never sleeps.</p>
+  </div>
+
+  <div class="destination-item">
+    <img src="4.jpeg" alt="Tokyo">
+    <h3>Taj mahal</h3>
+    <p>Taj mahal, uttarpradesh</p>
+    <p>Discover the land of the god.</p>
+  </div>
+
+  <div class="destination-item">
+    <img src="3.jpeg" alt="London">
+    <h3>London</h3>
+    <p>London, UK</p>
+    <p>Explore the rich history and culture.</p>
+  </div>
+
+  <div class="destination-item">
+    <img src="5.jpeg" alt="Rome">
+    <h3>Red fort</h3>
+    <p>Red fort, delhi </p>
+    <p>capital of India .</p>
+  </div>
+
+  <div class="destination-item">
+    <img src="1.jpg" alt="Dubai">
+    <h3>Paris</h3>
+        <p>Paris, France</p>
+        <p>Explore the city of love and fashion.</p>
+  </div>
+</div>
+</body>
+</html>
